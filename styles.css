@@ -184,3 +184,151 @@ h3 { font-size: 1.45rem; letter-spacing: -.02em; }
   .btn { width: 100%; }
   .service-card, .contact-card, .hero-panel { padding: 25px; }
 }
+
+:root {
+  --petroleo: #0B2239;
+  --petroleo-2: #183B5C;
+
+  /* Mantengo el nombre "salvia" para no cambiar todo el CSS,
+     pero desde ahora funciona como azul cobalto */
+  --salvia: #315CFF;
+
+  --marfil: #FFFFFF;
+  --gris-claro: #F4F5F7;
+  --carbon: #15191E;
+  --terracota: #FF5A3C;
+
+  --white: #FFFFFF;
+  --border: rgba(11, 34, 57, .14);
+  --shadow: 0 18px 50px rgba(11, 34, 57, .12);
+  --radius: 16px;
+}
+
+/* HEADER */
+.site-header {
+  background: rgba(255,255,255,.95);
+}
+
+.nav a:not(.nav-cta):hover {
+  color: var(--salvia);
+}
+
+.nav-cta {
+  background: var(--terracota);
+  color: white;
+}
+
+.nav-cta:hover {
+  background: #E94A2E;
+}
+
+/* HERO */
+.hero {
+  background:
+    radial-gradient(circle at 87% 16%, rgba(49,92,255,.15), transparent 29%),
+    radial-gradient(circle at 78% 78%, rgba(255,90,60,.09), transparent 23%),
+    #FFFFFF;
+}
+
+.hero:after {
+  border-color: rgba(49,92,255,.28);
+}
+
+.eyebrow {
+  color: var(--salvia);
+}
+
+/* Panel derecho del hero */
+.hero-panel {
+  background: var(--petroleo);
+  border: 0;
+  box-shadow: 0 24px 60px rgba(11,34,57,.18);
+}
+
+.hero-panel span {
+  color: #FFFFFF;
+  border-color: rgba(255,255,255,.17);
+}
+
+/* BOTONES */
+.btn-primary {
+  background: var(--terracota);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #E94A2E;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: #FFFFFF;
+  color: var(--petroleo);
+  border: 1.5px solid var(--petroleo);
+}
+
+/* SERVICIOS */
+.service-card {
+  border-radius: 14px;
+  box-shadow: none;
+}
+
+.service-card:hover {
+  box-shadow: 0 20px 50px rgba(11,34,57,.10);
+}
+
+/* Números grandes, más editoriales */
+.service-number {
+  width: auto;
+  height: auto;
+  display: block;
+  background: transparent;
+  color: var(--terracota);
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 850;
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+
+/* CÓMO TRABAJAMOS: bloque oscuro */
+.section-soft {
+  background: var(--petroleo);
+  color: #FFFFFF;
+}
+
+.section-soft h2,
+.section-soft h3,
+.section-soft .eyebrow {
+  color: #FFFFFF;
+}
+
+.section-soft .section-heading > p:last-child,
+.section-soft .step p {
+  color: rgba(255,255,255,.76);
+}
+
+.step-dot {
+  background: var(--terracota);
+  color: white;
+}
+
+/* FRANJA CONSULTORÍA A LA MEDIDA */
+.project-strip {
+  background: var(--salvia);
+}
+
+/* CONTACTO */
+.contact {
+  background: #FFFFFF;
+}
+
+.contact-card {
+  border-radius: 14px;
+  border-top: 4px solid var(--terracota);
+}
+
+/* FOOTER */
+.footer {
+  background: var(--petroleo);
+}
