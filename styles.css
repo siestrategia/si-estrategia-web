@@ -463,3 +463,6 @@ section {
 .contact-email {
   font-size: clamp(1.35rem, 2.2vw, 1.8rem);
 }
+.service-card {
+  border-radius: 8px;
+}
