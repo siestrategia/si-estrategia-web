@@ -411,3 +411,14 @@ h3 { font-size: 1.45rem; letter-spacing: -.02em; }
 section {
   scroll-margin-top: 95px;
 }
+.hero-panel {
+  border-radius: 12px;
+}
+
+.hero:after {
+  border-radius: 8px;
+}
+
+.service-card {
+  border-radius: 12px;
+}
