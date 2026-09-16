@@ -422,3 +422,15 @@ section {
 .service-card {
   border-radius: 12px;
 }
+
+.hero-panel {
+  border-radius: 8px;
+}
+
+.hero:after {
+  border-radius: 4px;
+}
+
+.service-card {
+  border-radius: 10px;
+}
