@@ -466,3 +466,51 @@ section {
 .service-card {
   border-radius: 8px;
 }
+/* HERO: bloque geométrico azul, sin círculo */
+.hero:after {
+  content: "";
+  display: block;
+  position: absolute;
+
+  width: 290px;
+  height: 310px;
+
+  right: 3%;
+  top: 16%;
+
+  background: rgba(49, 92, 255, .10);
+
+  border: none;
+  border-radius: 8px;
+
+  z-index: 0;
+}
+
+/* Contenido del hero por encima */
+.hero-grid {
+  position: relative;
+  z-index: 1;
+}
+
+/* Panel azul oscuro */
+.hero-panel {
+  position: relative;
+  z-index: 2;
+  border-radius: 12px;
+}
+
+/* Tarjetas de servicios */
+.service-card {
+  border-radius: 8px;
+}
+
+/* Tarjeta de contacto */
+.contact-card {
+  border-radius: 12px;
+}
+
+/* Botones */
+.btn,
+.nav-cta {
+  border-radius: 999px;
+}
