@@ -434,3 +434,25 @@ section {
 .service-card {
   border-radius: 10px;
 }
+
+.hero-panel {
+  border-radius: 12px;
+}
+
+.hero:after {
+  border-radius: 8px;
+}
+
+.service-card {
+  border-radius: 12px;
+}
+
+.contact-card {
+  border-radius: 12px;
+}
+
+/* Botones: mantenerlos más suaves */
+.btn,
+.nav-cta {
+  border-radius: 999px;
+}
