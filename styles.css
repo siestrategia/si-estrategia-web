@@ -456,3 +456,10 @@ section {
 .nav-cta {
   border-radius: 999px;
 }
+.contact-card {
+  border-radius: 12px;
+}
+
+.contact-email {
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+}
