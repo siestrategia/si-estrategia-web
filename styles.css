@@ -776,11 +776,10 @@ section {
 }
 
 .hero-image img {
-  display: block;
   width: 100%;
-  height: 260px;
-  object-fit: cover;
-  object-position: center 72%;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .hero-panel {
