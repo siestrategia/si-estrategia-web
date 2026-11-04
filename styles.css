@@ -557,3 +557,24 @@ section {
 .nav-cta {
   border-radius: 999px;
 }
+/* ==================================================
+   HERO: LISTA EDITORIAL DE ÁREAS
+   ================================================== */
+
+.hero-areas {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 390px;
+  margin-left: auto;
+  padding: 24px 0;
+}
+
+.hero-area {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  align-items: center;
+  gap: 18px;
+
+  padding: 24px 4px;
+  border-bottom: 1px solid rgba(11, 34, 57, .16);
