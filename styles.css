@@ -615,3 +615,25 @@ section {
   font-size: 1.25rem;
   font-weight: 850;
 }
+
+/* ==================================================
+   HERO FINAL: FOTO + PANEL AZUL
+   ================================================== */
+
+.hero:after {
+  content: "";
+  display: block;
+  position: absolute;
+
+  width: 340px;
+  height: 390px;
+
+  right: 2.5%;
+  top: 9%;
+
+  background:
+    linear-gradient(
+      rgba(11, 34, 57, .08),
+      rgba(11, 34, 57, .16)
+    ),
+    url("hero-ciudad.png");
