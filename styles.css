@@ -953,3 +953,10 @@ section {
     height: 360px;
   }
 }
+.hero {
+  padding-bottom: 38px;
+}
+
+#servicios {
+  padding-top: 50px;
+}
