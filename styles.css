@@ -578,3 +578,40 @@ section {
 
   padding: 24px 4px;
   border-bottom: 1px solid rgba(11, 34, 57, .16);
+/* HERO: TRES TARJETAS COMPACTAS */
+
+.hero-cards {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hero-card {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: center;
+  gap: 16px;
+
+  padding: 22px 24px;
+
+  background: #FFFFFF;
+  border: 1px solid rgba(11, 34, 57, .12);
+  border-radius: 8px;
+
+  color: var(--petroleo);
+  font-weight: 750;
+
+  box-shadow: 0 10px 26px rgba(11, 34, 57, .06);
+}
+
+.hero-card-number {
+  color: var(--terracota);
+  font-size: 1.25rem;
+  font-weight: 850;
+}
