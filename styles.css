@@ -631,9 +631,13 @@ section {
   right: 2.5%;
   top: 9%;
 
-  background:
-    linear-gradient(
-      rgba(11, 34, 57, .08),
-      rgba(11, 34, 57, .16)
-    ),
-    url("hero-ciudad.jpg");
+background:
+  linear-gradient(
+    rgba(11, 34, 57, .08),
+    rgba(11, 34, 57, .16)
+  ),
+  url("./hero-ciudad.jpg");
+
+background-size: cover;
+background-position: center 58%;
+background-repeat: no-repeat;
