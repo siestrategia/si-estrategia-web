@@ -566,41 +566,12 @@ section {
   overflow: hidden;
 }
 
+/* Quitamos la imagen del hero general */
 .hero:after {
-  content: "";
-  position: absolute;
-  display: block;
-
-  width: 340px;
-  height: 390px;
-
-  right: 2.5%;
-  top: 9%;
-
-  background-image:
-    linear-gradient(
-      rgba(11, 34, 57, .08),
-      rgba(11, 34, 57, .16)
-    ),
-    url("./hero-ciudad.jpg");
-
-  background-size: cover;
-  background-position: center 58%;
-  background-repeat: no-repeat;
-
-  border: none;
-  border-radius: 4px;
-
-  filter: saturate(.75) contrast(.92);
-
-  z-index: 0;
+  display: none;
 }
 
-.hero-grid {
-  position: relative;
-  z-index: 1;
-}
-
+/* Panel principal */
 .hero-panel {
   position: relative;
   z-index: 2;
@@ -612,7 +583,37 @@ section {
   box-shadow: 0 24px 60px rgba(11, 34, 57, .18);
 }
 
+/* Foto detrás del panel */
+.hero-panel::before {
+  content: "";
+  position: absolute;
+
+  width: 310px;
+  height: 300px;
+
+  right: -55px;
+  top: -70px;
+
+  background-image:
+    linear-gradient(
+      rgba(11, 34, 57, .06),
+      rgba(11, 34, 57, .14)
+    ),
+    url("./hero-ciudad.jpg");
+
+  background-size: cover;
+  background-position: center 55%;
+  background-repeat: no-repeat;
+
+  border-radius: 4px;
+
+  filter: saturate(.78) contrast(.94);
+
+  z-index: -1;
+}
+
+/* Mantener los textos del panel delante */
 .hero-panel span {
-  color: #FFFFFF;
-  border-color: rgba(255,255,255,.17);
+  position: relative;
+  z-index: 1;
 }
