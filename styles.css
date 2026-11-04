@@ -784,11 +784,10 @@ section {
 
 .hero-panel {
   width: 100%;
-  position: static !important;
-  transform: none !important;
   margin: 0 !important;
+  transform: none !important;
 
-  padding: 28px 30px;
+  padding: 20px 26px;
 
   background: var(--petroleo);
   border: 0;
@@ -799,7 +798,7 @@ section {
 
 .hero-panel span {
   display: block;
-  padding: 18px 2px;
+  padding: 14px 2px;
 
   color: #FFFFFF;
   font-weight: 750;
