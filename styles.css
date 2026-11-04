@@ -558,90 +558,8 @@ section {
   border-radius: 999px;
 }
 /* ==================================================
-   HERO: LISTA EDITORIAL DE ÁREAS
+   HERO FINAL: FOTO + PANEL AZUL OSCURO
    ================================================== */
-
-.hero-areas {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 390px;
-  margin-left: auto;
-  padding: 24px 0;
-}
-
-.hero-area {
-  display: grid;
-  grid-template-columns: 54px 1fr;
-  align-items: center;
-  gap: 18px;
-
-  padding: 24px 4px;
-  border-bottom: 1px solid rgba(11, 34, 57, .16);
-/* HERO: TRES TARJETAS COMPACTAS */
-
-.hero-cards {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 400px;
-  margin-left: auto;
-
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.hero-card {
-  display: grid;
-  grid-template-columns: 48px 1fr;
-  align-items: center;
-  gap: 16px;
-
-  padding: 22px 24px;
-
-  background: #FFFFFF;
-  border: 1px solid rgba(11, 34, 57, .12);
-  border-radius: 8px;
-
-  color: var(--petroleo);
-  font-weight: 750;
-
-  box-shadow: 0 10px 26px rgba(11, 34, 57, .06);
-}
-
-.hero-card-number {
-  color: var(--terracota);
-  font-size: 1.25rem;
-  font-weight: 850;
-}
-
-/* ==================================================
-   HERO FINAL: FOTO + PANEL AZUL
-   ================================================== */
-
-.hero:after {
-  content: "";
-  display: block;
-  position: absolute;
-
-  width: 340px;
-  height: 390px;
-
-  right: 2.5%;
-  top: 9%;
-
-background:
-  linear-gradient(
-    rgba(11, 34, 57, .08),
-    rgba(11, 34, 57, .16)
-  ),
-  url("hero-ciudad.jpg");
-
-background-size: cover;
-background-position: center 58%;
-background-repeat: no-repeat;
-/* HERO: FOTO DETRÁS DEL PANEL */
 
 .hero {
   position: relative;
@@ -686,9 +604,15 @@ background-repeat: no-repeat;
 .hero-panel {
   position: relative;
   z-index: 2;
+
   background: var(--petroleo);
+  border: 0;
   border-radius: 8px;
+
+  box-shadow: 0 24px 60px rgba(11, 34, 57, .18);
 }
-.hero:after {
-  background: rgba(...);
+
+.hero-panel span {
+  color: #FFFFFF;
+  border-color: rgba(255,255,255,.17);
 }
