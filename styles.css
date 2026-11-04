@@ -583,16 +583,28 @@ section {
   box-shadow: 0 24px 60px rgba(11, 34, 57, .18);
 }
 
-/* Foto detrás del panel */
-.hero-panel::before {
+/* FOTO DETRÁS DEL PANEL DEL HERO */
+
+.hero:after {
+  display: none;
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 1;
+}
+
+/* La foto pertenece al contenedor, no al panel */
+.hero-grid::after {
   content: "";
   position: absolute;
 
-  width: 310px;
-  height: 300px;
+  width: 340px;
+  height: 350px;
 
-  right: -55px;
-  top: -70px;
+  right: -35px;
+  top: 50%;
+  transform: translateY(-58%);
 
   background-image:
     linear-gradient(
@@ -606,14 +618,18 @@ section {
   background-repeat: no-repeat;
 
   border-radius: 4px;
-
   filter: saturate(.78) contrast(.94);
 
-  z-index: -1;
+  z-index: 0;
 }
 
-/* Mantener los textos del panel delante */
-.hero-panel span {
+.hero-panel {
   position: relative;
-  z-index: 1;
+  z-index: 2;
+
+  background: var(--petroleo);
+  border: 0;
+  border-radius: 8px;
+
+  box-shadow: 0 24px 60px rgba(11, 34, 57, .18);
 }
