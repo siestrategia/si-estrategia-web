@@ -689,3 +689,6 @@ background-repeat: no-repeat;
   background: var(--petroleo);
   border-radius: 8px;
 }
+.hero:after {
+  background: rgba(...);
+}
