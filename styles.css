@@ -633,3 +633,55 @@ section {
 
   box-shadow: 0 24px 60px rgba(11, 34, 57, .18);
 }
+/* =========================================
+   HERO DERECHO: IMAGEN ARRIBA + PANEL ABAJO
+   ========================================= */
+
+.hero:after {
+  display: none;
+}
+
+.hero-grid {
+  align-items: center;
+}
+
+.hero-visual {
+  width: 100%;
+  max-width: 420px;
+  margin-left: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 14px 32px rgba(11, 34, 57, .08);
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center 55%;
+}
+
+.hero-panel {
+  position: relative;
+  z-index: 2;
+
+  background: var(--petroleo);
+  border: 0;
+  border-radius: 8px;
+
+  box-shadow: 0 24px 60px rgba(11, 34, 57, .18);
+}
+
+.hero-panel span {
+  color: #FFFFFF;
+  border-color: rgba(255,255,255,.17);
+}
